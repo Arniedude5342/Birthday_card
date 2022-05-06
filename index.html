@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Birthday wishes</title>
+<link rel="stylesheet" href="style.css">
+<script src="fabric.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</head>
+<body class="body_backgorund" onload="new_image()">
+	<center>
+		<br><br>
+		<!--- Create canvas --->
+		<h1 class="btn btn-success btn-lg">You Are Welcome To Arnav's 11 Birthday Party!</h1>
+		<canvas width="600" height="500" id="myCanvas"></canvas>
+		<br>
+		<br>
+		<input placeholder="Write your Name Here" id="name" type="text">
+		<br>
+		<br>
+		<br>
+		<!--- Create Bootstrap button --->
+		<button class="btn btn-warning btn-lg" onclick="yes()">Yes I can Come</button>
+        <button class="btn btn-warning btn-lg" onclick="no()">No I am not Coming</button>
+		<button class="btn btn-info btn-lg" onclick="info()">Click for Information</button>
+		<br>
+		<h1>People Who are Coming</h1>
+		<br>
+		<div id="names_div">
+
+		</div>
+	</center>
+	<audio id="myAudio" src="bdayaudio.mp3"></audio>
+	<script src="main.js"></script>
+</body>
+</html>
